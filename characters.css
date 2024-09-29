@@ -1,0 +1,120 @@
+/* Add a black background color to the top navigation */
+
+
+.logo {
+ 
+    width: 150px;
+    height: 34px;
+    margin-right: 0px;
+    margin-top: 7px;    /* if you want it vertically middle of the navbar. */
+    position: left;
+    margin-left: 10px;
+  }
+  
+  
+  .header_menu {
+      padding: auto;
+      background-color: black;
+      width: 100%;
+      height: 50px;
+      position: left;
+      padding-top: 0%;
+      
+    }
+    
+    /* Style the links inside the navigation bar */
+    .header_menu a {
+      float: right;
+      padding: auto;
+      color: #ffbc1f;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  
+  
+    
+    /* Change the color of links on hover */
+    .header_menu a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .header_menu a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+  
+  body
+  {
+     
+     background-color: #000000;
+      margin: 0;
+      font-family: "Kameron", serif;
+  }
+  
+  #hamgif
+  {
+      background-image: url(Ham_alpha_gif.gif);
+      background-repeat: no-repeat;
+      background-size: 30%;
+      background-position: center;
+      padding-top: 600px;
+  }
+  
+  .characters
+  {
+      padding-top: 10px;
+  }
+  
+  .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    padding-left: 20%;
+   }
+   
+   img {
+     max-width: 100%;
+     max-height:100%;
+   }
+   
+   .text {
+     font-size: 30px;
+     color: #ddd;
+   }
+  
+  #titles
+  {
+    color: #ffbc1f;
+    text-align: center;
+    font-size: 80px;
+  }
+
+
+  #name_characters
+  {
+    color: #ffbc1f;
+    font-size: 30px;
+  }
+  
+  footer
+  {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+   
+  }
+  
+  h2 {
+    color: #ddd;
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 20px;
+    text-align: center;
+  
+    
+  }

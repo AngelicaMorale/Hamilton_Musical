@@ -1,20 +1,39 @@
 /* Add a black background color to the top navigation */
+
+
+.logo {
+ 
+  width: 150px;
+  height: 34px;
+  margin-right: 0px;
+  margin-top: 7px;    /* if you want it vertically middle of the navbar. */
+  position: left;
+  margin-left: 10px;
+}
+
+
 .header_menu {
     padding: auto;
     background-color: black;
     width: 100%;
     height: 50px;
+    position: left;
+    padding-top: 0%;
+    
   }
   
   /* Style the links inside the navigation bar */
   .header_menu a {
-    float: left;
-    color: #f2f2f2;
+    float: right;
+    padding: auto;
+    color: #ffbc1f;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
+
+
   
   /* Change the color of links on hover */
   .header_menu a:hover {
@@ -30,12 +49,13 @@
 
 body
 {
-    text-align: center;
+   
     background-image: url(Ham_background.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     margin: 0;
+    font-family: "Kameron", serif;
 }
 
 #hamgif
@@ -47,16 +67,48 @@ body
     padding-top: 600px;
 }
 
-
-
-h1
+.characters
 {
-    text-align: center;
-    color: blue;
+    padding-top: 10px;
 }
 
-p
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+ }
+ 
+ img {
+   max-width: 100%;
+   max-height:100%;
+ }
+ 
+ .text {
+   font-size: 70px;
+ }
+
+#titles
 {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+  color: #000000;
+  text-align: center;
+  font-size: 80px;
+}
+
+footer
+{
+  width: 100%;
+  background-color: black;
+  height: 50px;
+ 
+}
+
+h2 {
+  color: #ddd;
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 20px;
+  text-align: center;
+
+  
 }
