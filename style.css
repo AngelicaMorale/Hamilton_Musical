@@ -159,6 +159,7 @@ footer
     background-color: var(--footer-background);
     padding: 4px;
     font-weight: var(--font-weight-bold);
+    font-size: 12px;
  
 }
 
