@@ -1,151 +1,215 @@
-/* Add a black background color to the top navigation */
+:root{
+  /* Color scheme */
+  --primary-color: #966100;;
+  --accent-color: #f4c90b;
+  --text-color: #00140D;
+  --background-color: #EEF5DB;
+  --header-background: #000000;
+  --footer-background: #000000;
+  --footer-text-color: #f4c90b;;
+  /* Typography */
+  --font-family: Urbanist;
+  --font-size-base: 18px;
+  --font-size-heading: 24px;
+  --font-weight-regular: 500;
+  --font-weight-bold: 900;
+  /* Spacing */
+  --spacing-unit: 20px;
+  /* Transitions */
+  --transition-duration: 0.2s;
+  --scale: 1;
+  --scale-hover: 1.1;
+}
+
+body{
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  margin:0;
+  padding:0;
+}
+
+header {
+  display: flex;
+  background-color: var(--header-background);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+}
+
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav ul li a{
+  display: inline-block;
+  text-decoration: none;   
+  font-weight: var(--font-weight-bold);
+  color: var(--accent-color);
+  transform: scale(var(--scale));
+  transition: color var(--transition-duration) ease,transform var(--transition-duration) ease;
+}
+
+nav ul li a:hover{
+  color: var(--primary-color);
+  transform: scale(var(--scale-hover));
+}
 
 
 .logo {
  
-    width: 150px;
-    height: 34px;
-    margin-right: 0px;
-    margin-top: 7px;    /* if you want it vertically middle of the navbar. */
-    position: left;
-    margin-left: 10px;
-  }
-  
-  
-  .header_menu {
-      padding: auto;
-      background-color: black;
-      width: 100%;
-      height: 50px;
-      position: left;
-      padding-top: 0%;
-      
-    }
-    
-    /* Style the links inside the navigation bar */
-    .header_menu a {
-      float: right;
-      padding: auto;
-      color: #ffbc1f;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-  
-  
-    
-    /* Change the color of links on hover */
-    .header_menu a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    /* Add a color to the active/current link */
-    .header_menu a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-  
-  body
-  {
-     
-     background-color: #000000;
-      margin: 0;
-      font-family: "Kameron", serif;
-  }
-  
-  #hamgif
-  {
-      background-image: url(Ham_alpha_gif.gif);
-      background-repeat: no-repeat;
-      background-size: 30%;
-      background-position: center;
-      padding-top: 600px;
-  }
-  
-  .characters
-  {
-      padding-top: 10px;
-  }
-  
-  .container {
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 40px 40px 40px;
-  }
-
-    .container2 {
-   
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 40px 40px 40px 40px;
-   
-   }
+  width: 150px;
+  height: 34px;
+  margin-right: 0px;
+  margin-top: 7px;    /* if you want it vertically middle of the navbar. */
+  position: left;
+  margin-left: 10px;
+}
 
 
-   .container3 {
+body
+{
    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 40px 40px 40px;
+    background-color: var(--footer-background);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center;
+    margin: 0;
+    font-family: "Kameron", serif;
+    
+}
+
+#hamgif
+{
+    background-image: url(Ham_alpha_gif.gif);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+    padding-top: 600px;
+}
+
+.characters
+{
+    padding-top: 10px;
+}
+
+h1 {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 12px;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 15px;
+}
+
+.projects {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing-unit)*3);
+  justify-content: space-evenly;
+}
+
+.HamCard{
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(253, 253, 253, 0.1);
+  transform: scale(var(--scale));
+  background-color: #1c1b1b;
+}
+
+.HamCard:hover{
+  box-shadow: 0px 5px 20px rgb(106, 106, 106);
+  transform: scale(var(--scale-hover));
+  border: 1px solid;
+  padding: 10px;
+}
+
+.HamCard img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
 
 }
 
-   #credits
-   {
-        color: #ff841f;
-        width: 100%;
-        justify-content: left;
-       padding-top: 10px;
-   }
-   
-   img {
-     max-width: 100%;
-     max-height:100%;
-   }
-   
-   .text {
-    
-     color: #ddd;
-   }
+.HamCard h3, .HamCard p {
+ text-align: center;
+}
+
+audio {
+  position: center;
+}
+
+h3{
+  color: var(--accent-color);
+  font-size: 30px;
+}
+
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+ }
+ 
+ img {
+   max-width: 100%;
+   max-height:100%;
+ }
+ 
+ .text {
+   font-size: 70px;
+ }
+
+#titles
+{
+  color: #000000;
+  text-align: center;
+  font-size: 80px;
+}
+
+audio{
+  padding-left: 50px;
+}
+
+footer
+{
+  text-align: center;
+    background-color: var(--footer-background);
+    padding: 4px;
+    font-weight: var(--font-weight-bold);
+ 
+}
+
+p {
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 20px;
+  text-align: center;
+
   
-  #titles
-  {
-    color: #ffbc1f;
-    text-align: center;
-    font-size: 80px;
-  }
+}
 
 
-  #name_characters
-  {
-    color: #ffbc1f;
-    font-size: 30px;
-    margin: 0 auto;
-  }
-  
-  p
-  {
-    font-size: 15px;
-  }
-  footer
-  {
-    width: 100%;
-    background-color: black;
-    height: 50px;
-   
-  }
-  
-  h2 {
-    color: #ddd;
-    font-weight: 400;
-    font-size: 13px;
-    padding-top: 20px;
-    text-align: center;
+.description {
+  color: var(--background-color);
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 
-  }
+  
+}
